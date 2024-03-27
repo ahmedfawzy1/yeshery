@@ -1,0 +1,41 @@
+.arrow {
+  width: 8px;
+  height: 12px;
+}
+
+.searchImg {
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 14px;
+}
+
+.offer {
+  display: flex;
+}
+@media screen and (max-width: 1100px) {
+  .offer {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .searcharea {
+    display: none !important;
+  }
+  .categoryList {
+    font-size: 14px !important;
+  }
+}
+
+.cartItemCount {
+  width: 25px;
+  height: 25px;
+  top: -10px;
+  right: -10px;
+}
