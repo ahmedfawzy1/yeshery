@@ -97,7 +97,6 @@ export default class Product extends React.Component {
       <>
         <MinCategory />
         <Navbar product={product} cartItemCount={cartItemCount} />
-
         <section className="productdetails py-5">
           <div className="container">
             <div className="row g-5">
@@ -182,6 +181,7 @@ export default class Product extends React.Component {
             </div>
           </div>
         </section>
+        <SimilarProducts />
       </>
     );
   }

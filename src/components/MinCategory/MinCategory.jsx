@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./MinCategory.scss";
+import style from "./MinCategory.module.scss";
 
 export default function MinCategory() {
   return (
-    <div className={`mincategory`}>
+    <div className={style.mincategory}>
       <div className="container">
         <nav aria-label="breadcrumb">
           <ol className="breadcrumb py-3 m-0">

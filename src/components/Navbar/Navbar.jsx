@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./Navbar.module.scss";
 import logo from "../../images/Group 769.svg";
 import menu from "../../images/Group 770.svg";
@@ -13,9 +13,15 @@ import adidas from "../../images/Group 745.svg";
 import shape from "../../images/Path 772.svg";
 import wishlist from "../../images/Path 771.svg";
 import user from "../../images/Path 773.svg";
+import Cart from "../Cart/Cart";
 
-export default function Navbar({ cartItemCount }) {
-  console.log(cartItemCount);
+export default function Navbar({ cartItemCount, product }) {
+  const [showComponent, setShowComponent] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowComponent(!showComponent);
+  };
+
   return (
     <header className="bg-main-secondary">
       <nav className="navbar navbar-expand-lg font-sm">
@@ -69,7 +75,7 @@ export default function Navbar({ cartItemCount }) {
           </div>
 
           <div className="d-flex gap-3">
-            <Link className="nav-link d-flex align-items-center fw-bold" aria-current="page" href="/">
+            <button onClick={handleButtonClick} className="nav-link d-flex align-items-center fw-bold" aria-current="page" href="/">
               <div className="cart position-relative">
                 <img src={shape} alt="shape" />
                 <span
@@ -79,7 +85,7 @@ export default function Navbar({ cartItemCount }) {
                 </span>
               </div>
               <p className="m-0 ps-2">Cart</p>
-            </Link>
+            </button>
             <Link className="nav-link d-flex align-items-center fw-bold" href="/">
               <img src={wishlist} alt="wishlist" />
               <p className="m-0 ps-2">Wishlist</p>
@@ -135,6 +141,7 @@ export default function Navbar({ cartItemCount }) {
           </div>
         </div>
       </nav>
+      {<Cart product={product} cartItemCount={cartItemCount} showComponent={showComponent} setShowComponent={setShowComponent} />}
     </header>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../images/Group 769.svg";
 import newsletter from "../../images/Group 1431.svg";
 import { Link } from "react-router-dom";
+import style from "./Footer.module.scss";
 
 export default function Footer() {
   return (
