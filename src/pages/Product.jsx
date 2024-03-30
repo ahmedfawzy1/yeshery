@@ -92,6 +92,16 @@ export default class Product extends React.Component {
       autoplay: true,
       slidesToShow: 4,
       slidesToScroll: 1,
+
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+          },
+        },
+      ],
     };
     return (
       <>

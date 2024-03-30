@@ -1,16 +1,13 @@
 .similarproducts {
 }
-
-.similarproducts .product {
-  //   width: 210px;
-  overflow: hidden;
-  //   height: 254px;
+@media screen and (max-width: 767px) {
+  .similarproducts .row > * {
+    width: 50%;
+  }
 }
 
-.similarproducts .product .image {
-  //   width: fit-content;
-  //   width: 254px;
-  //   height: 254px;
+.similarproducts .product {
+  overflow: hidden;
 }
 
 .similarproducts .product .image img {
