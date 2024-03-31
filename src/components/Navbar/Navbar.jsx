@@ -155,7 +155,6 @@ export default class Navbar extends Component {
             </div>
           </div>
         </nav>
-        {/* {showComponent && <Cart product={product} cartItemCount={cartItemCount} showComponent={showComponent} />} */}
         <Cart showComponent={showComponent} setShowComponent={this.handleCloseCart} />
       </header>
     );

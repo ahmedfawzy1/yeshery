@@ -118,7 +118,7 @@ export default function Footer() {
                     </div>
                   </div>
                   <div className="col-md-4">
-                    <div className="payment">
+                    <div className={`${style.payment} d-flex justify-content-center align-items-center gap-3`}>
                       <img src={cash} alt="" />
                       <img src={visa} alt="" />
                       <img src={master} alt="" />
