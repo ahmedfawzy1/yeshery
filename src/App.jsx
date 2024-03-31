@@ -1,12 +1,12 @@
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Product from "./pages/Product";
 import NotFound from "./pages/NotFound";
 import { Toaster } from "react-hot-toast";
 
 function App() {
-  let routers = createBrowserRouter([
+  let routers = createHashRouter([
     {
       path: "/",
       element: <Layout />,
