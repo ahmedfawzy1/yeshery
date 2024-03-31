@@ -3,13 +3,17 @@ import style from "./cart.module.scss";
 import shirt from "../../images/Group 354.png";
 
 export default function Cart({ showComponent, setShowComponent }) {
+  const handleClose = () => {
+    setShowComponent(false);
+  };
+
   return (
     <>
       <div className={`position-fixed top-0 ${style.layer} ${showComponent ? style.show : style.hide}`}></div>
       <div className={`${style.cart} position-fixed top-0 ${showComponent ? style.show : style.hide}`}>
         <div className={`${style.mycart} p-4`}>
           <div className="closeBtn text-end">
-            <button onClick={() => setShowComponent(!showComponent)} className="btn fs-1">
+            <button onClick={handleClose} className="btn fs-1">
               x
             </button>
           </div>

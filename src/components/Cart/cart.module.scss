@@ -32,3 +32,10 @@
   transform: translateX(100%);
   opacity: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .mycart {
+    width: 360px;
+    height: 100%;
+  }
+}
