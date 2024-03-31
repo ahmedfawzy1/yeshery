@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yeshery/static/css/main.e95c76a5.css",
-    "main.js": "/yeshery/static/js/main.026d1985.js",
+    "main.js": "/yeshery/static/js/main.dd01f45d.js",
     "static/js/453.84eb66d9.chunk.js": "/yeshery/static/js/453.84eb66d9.chunk.js",
     "static/media/Group 333.png": "/yeshery/static/media/Group 333.e354c594db9e6ed01c55.png",
     "static/media/Group 331.png": "/yeshery/static/media/Group 331.522cad545be1d70b3941.png",
@@ -36,11 +36,11 @@
     "static/media/Path 363.svg": "/yeshery/static/media/Path 363.88401e0747c0d422b487442cb686ef05.svg",
     "static/media/Path 364.svg": "/yeshery/static/media/Path 364.a80d09d94ecbf89840360848e8f52734.svg",
     "main.e95c76a5.css.map": "/yeshery/static/css/main.e95c76a5.css.map",
-    "main.026d1985.js.map": "/yeshery/static/js/main.026d1985.js.map",
+    "main.dd01f45d.js.map": "/yeshery/static/js/main.dd01f45d.js.map",
     "453.84eb66d9.chunk.js.map": "/yeshery/static/js/453.84eb66d9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e95c76a5.css",
-    "static/js/main.026d1985.js"
+    "static/js/main.dd01f45d.js"
   ]
 }
